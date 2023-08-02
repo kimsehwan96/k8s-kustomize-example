@@ -1,0 +1,7 @@
+namespace: nginx
+
+resources:
+  - ./nginx-namespace.yaml
+  - ./nginx-deployment.yaml
+  - ./nginx-pdb.yaml
+  - ./nginx-service.yaml

@@ -1,0 +1,12 @@
+namespace: nginx
+
+resources:
+  - ../base
+
+patches:
+  - path: nginx-deployment-dev.yaml
+    target:
+      labelSelector: "app=nginx"
+  - path: nginx-service-dev.yaml
+    target:
+      labelSelector: "app=nginx"

@@ -1,0 +1,5 @@
+namespace: nginx
+
+resources:
+  - ./nginx-namespace.yaml
+  - ./nginx-pdb.yaml

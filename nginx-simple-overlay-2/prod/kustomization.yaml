@@ -1,0 +1,6 @@
+namespace: nginx
+
+resources:
+  - ../base
+  - nginx-deployment.yaml
+  - nginx-service.yaml

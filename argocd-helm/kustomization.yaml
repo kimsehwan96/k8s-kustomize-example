@@ -1,0 +1,12 @@
+namespace: argocd
+
+resources:
+  - ./argocd-namespace.yaml
+helmCharts:
+  - name: argo-cd
+    includeCRDs: true
+    repo: https://argoproj.github.io/argo-helm
+    releaseName: argo-cd
+    version: 5.42.1 # 2023.08.01 https://artifacthub.io/packages/helm/argo/argo-cd
+    namespace: argocd
+    valuesFile: values.yaml

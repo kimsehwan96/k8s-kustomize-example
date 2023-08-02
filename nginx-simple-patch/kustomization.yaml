@@ -1,0 +1,13 @@
+namespace: nginx
+
+resources:
+  - ./nginx-namespace.yaml
+  - ./nginx-deployment.yaml
+  - ./nginx-pdb.yaml
+  - ./nginx-service.yaml
+
+patches:
+  - path: add-label.patch.yaml
+  - path: fix-version.patch.yaml
+    target:
+      labelSelector: "app=nginx"
